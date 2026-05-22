@@ -1,0 +1,33 @@
+{
+  "categories": [
+    { "id": "all", "name": "全部", "default": true },
+    { "id": "stable", "name": "稳定优选" },
+    { "id": "cheap", "name": "高性价比" }
+  ],
+  "sites": [
+    {
+      "id": "demo-a",
+      "name": "Demo 中转 A",
+      "url": "https://example.com/a",
+      "logo": "/logos/demo-a.png",
+      "description": "支持 GPT/Claude/Gemini 全系列，官方价 5 折",
+      "categories": ["stable"]
+    },
+    {
+      "id": "demo-b",
+      "name": "Demo 中转 B",
+      "url": "https://example.com/b",
+      "logo": "/logos/demo-b.png",
+      "description": "高性价比中转，按量计费，新用户 5 元额度",
+      "categories": ["cheap"]
+    },
+    {
+      "id": "demo-c",
+      "name": "Demo 中转 C",
+      "url": "https://example.com/c",
+      "logo": "",
+      "description": "稳定且实惠，双线路自动切换",
+      "categories": ["stable", "cheap"]
+    }
+  ]
+}
