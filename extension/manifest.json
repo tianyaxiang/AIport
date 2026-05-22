@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "AIport 一键打开",
+  "version": "0.1.0",
+  "description": "在 AIport 导航站一键打开当前可见的所有 AI 中转站",
+  "action": { "default_title": "打开当前可见站点" },
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "host_permissions": [
+    "http://localhost:4321/*",
+    "https://aiport.example.com/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [{
+    "matches": [
+      "http://localhost:4321/*",
+      "https://aiport.example.com/*"
+    ],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
