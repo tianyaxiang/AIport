@@ -2,6 +2,8 @@
 import Base from "../layouts/Base.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 import Sidebar from "../components/Sidebar.astro";
+import SearchBox from "../components/SearchBox.astro";
+import SiteCard from "../components/SiteCard.astro";
 import sitesData from "../../sites.json";
 import type { SitesData } from "../types";
 
@@ -13,11 +15,15 @@ const activeId = defaultCat?.id ?? "all";
   <header class="app-header">
     <span class="brand">AIport</span>
     <span class="spacer"></span>
+    <SearchBox />
     <ThemeToggle />
   </header>
   <div class="app-layout">
     <Sidebar categories={data.categories} activeId={activeId} />
-    <main></main>
+    <main class="cards" data-cards data-active-category={activeId}>
+      {data.sites.map((s) => <SiteCard site={s} />)}
+      <div class="empty-state" data-empty hidden>没有匹配的站点</div>
+    </main>
   </div>
   <script src="/scripts/theme.js" defer></script>
 </Base>

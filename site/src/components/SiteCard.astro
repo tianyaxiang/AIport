@@ -1,0 +1,30 @@
+---
+import type { Site } from "../types";
+interface Props { site: Site }
+const { site } = Astro.props;
+const initial = site.name.trim().charAt(0).toUpperCase();
+const cats = site.categories.join(",");
+---
+<a
+  class="site-card"
+  href={site.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  data-site-url={site.url}
+  data-categories={cats}
+  data-search-text={(site.name + " " + site.description).toLowerCase()}
+>
+  <div class="site-head">
+    {site.logo
+      ? <img
+          class="site-logo"
+          src={site.logo}
+          alt=""
+          onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'site-logo placeholder',textContent:this.dataset.initial}))"
+          data-initial={initial}
+        />
+      : <div class="site-logo placeholder">{initial}</div>}
+    <h3 class="site-name">{site.name}</h3>
+  </div>
+  <p class="site-desc">{site.description}</p>
+</a>
