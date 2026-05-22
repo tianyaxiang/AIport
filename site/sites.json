@@ -1,33 +1,111 @@
 {
   "categories": [
-    { "id": "all", "name": "全部", "default": true },
-    { "id": "stable", "name": "稳定优选" },
-    { "id": "cheap", "name": "高性价比" }
+    { "id": "all", "name": "全部", "default": true }
   ],
   "sites": [
     {
-      "id": "demo-a",
-      "name": "Demo 中转 A",
-      "url": "https://example.com/a",
-      "logo": "/logos/demo-a.png",
-      "description": "支持 GPT/Claude/Gemini 全系列，官方价 5 折",
-      "categories": ["stable"]
-    },
-    {
-      "id": "demo-b",
-      "name": "Demo 中转 B",
-      "url": "https://example.com/b",
-      "logo": "/logos/demo-b.png",
-      "description": "高性价比中转，按量计费，新用户 5 元额度",
-      "categories": ["cheap"]
-    },
-    {
-      "id": "demo-c",
-      "name": "Demo 中转 C",
-      "url": "https://example.com/c",
+      "id": "anyrouter",
+      "name": "AnyRouter",
+      "url": "https://anyrouter.top/",
       "logo": "",
-      "description": "稳定且实惠，双线路自动切换",
-      "categories": ["stable", "cheap"]
+      "description": "anyrouter.top — AI API 中转",
+      "categories": []
+    },
+    {
+      "id": "ioll",
+      "name": "Ciallo 公益站",
+      "url": "https://ioll.pp.ua/",
+      "logo": "",
+      "description": "Ciallo～(∠・ω< )⌒☆ · ioll.pp.ua",
+      "categories": []
+    },
+    {
+      "id": "code-relay",
+      "name": "Code Router",
+      "url": "https://api.code-relay.com/",
+      "logo": "",
+      "description": "Code Router · api.code-relay.com",
+      "categories": []
+    },
+    {
+      "id": "jiuuij",
+      "name": "Joverna",
+      "url": "https://jiuuij.de5.net/",
+      "logo": "",
+      "description": "Joverna · jiuuij.de5.net",
+      "categories": []
+    },
+    {
+      "id": "api67",
+      "name": "Pomelo",
+      "url": "https://api.67.si/",
+      "logo": "",
+      "description": "Pomelo · api.67.si",
+      "categories": []
+    },
+    {
+      "id": "linuxdo-newapi",
+      "name": "慕鸢の公益站",
+      "url": "https://newapi.linuxdo.edu.rs/",
+      "logo": "",
+      "description": "「慕鸢の公益站」 · newapi.linuxdo.edu.rs",
+      "categories": []
+    },
+    {
+      "id": "zapi",
+      "name": "Zhoumo API",
+      "url": "https://zapi.aicc0.com/",
+      "logo": "",
+      "description": "Zhoumo API · zapi.aicc0.com",
+      "categories": []
+    },
+    {
+      "id": "zhenhaoji",
+      "name": "真好记公益站",
+      "url": "https://api.zhenhaoji.qzz.io/",
+      "logo": "",
+      "description": "真好记公益站 · api.zhenhaoji.qzz.io",
+      "categories": []
+    },
+    {
+      "id": "elysiver",
+      "name": "ElySiver",
+      "url": "https://elysiver.h-e.top/",
+      "logo": "",
+      "description": "ElySiver · elysiver.h-e.top",
+      "categories": []
+    },
+    {
+      "id": "muyuan",
+      "name": "君の的公益",
+      "url": "https://muyuan.do/",
+      "logo": "",
+      "description": "君の的公益 · muyuan.do",
+      "categories": []
+    },
+    {
+      "id": "cdk-hybgzs",
+      "name": "CDK 中转",
+      "url": "https://cdk.hybgzs.com/",
+      "logo": "",
+      "description": "cdk.hybgzs.com — AI API 中转",
+      "categories": []
+    },
+    {
+      "id": "hotaru",
+      "name": "HotaruAPI",
+      "url": "https://hotaruapi.com/",
+      "logo": "",
+      "description": "HotaruAPI · hotaruapi.com",
+      "categories": []
+    },
+    {
+      "id": "yyds",
+      "name": "小辣椒公益站",
+      "url": "https://yyds.215.im/",
+      "logo": "",
+      "description": "小辣椒 公益站～(～￣▽￣)～ · yyds.215.im",
+      "categories": []
     }
   ]
 }
