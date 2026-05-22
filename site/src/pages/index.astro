@@ -1,13 +1,16 @@
 ---
 import Base from "../layouts/Base.astro";
+import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 <Base>
   <header class="app-header">
     <span class="brand">AIport</span>
     <span class="spacer"></span>
+    <ThemeToggle />
   </header>
   <div class="app-layout">
     <aside></aside>
     <main></main>
   </div>
+  <script src="/scripts/theme.js" defer></script>
 </Base>
