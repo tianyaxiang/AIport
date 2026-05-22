@@ -85,10 +85,18 @@
     },
     {
       "id": "cdk-hybgzs",
-      "name": "CDK 中转",
+      "name": "黑与白福利站",
       "url": "https://cdk.hybgzs.com/",
       "logo": "",
-      "description": "cdk.hybgzs.com — AI API 中转",
+      "description": "黑与白公益站的福利站",
+      "categories": []
+    },
+    {
+      "id": "hybgzs",
+      "name": "黑与白公益站",
+      "url": "https://ai.hybgzs.com",
+      "logo": "",
+      "description": "黑与白公益站",
       "categories": []
     },
     {
