@@ -1,0 +1,15 @@
+---
+import type { Category } from "../types";
+interface Props { categories: Category[]; activeId: string }
+const { categories, activeId } = Astro.props;
+---
+<aside class="sidebar" data-sidebar>
+  {categories.map((c) => (
+    <button
+      class="cat"
+      data-category={c.id}
+      aria-pressed={c.id === activeId ? "true" : "false"}
+      type="button"
+    >{c.name}</button>
+  ))}
+</aside>

@@ -70,3 +70,47 @@ body {
   font-size: 16px;
 }
 .theme-toggle:hover { background: var(--surface-alt); }
+
+.sidebar {
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+  padding: 16px 8px;
+  overflow-y: auto;
+}
+.sidebar .cat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+.sidebar .cat:hover { background: var(--surface-alt); }
+.sidebar .cat[aria-pressed="true"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 600;
+}
+.sidebar .cat[aria-pressed="true"]::before {
+  content: "";
+  position: absolute; left: 2px; top: 8px; bottom: 8px;
+  width: 2px; background: var(--accent); border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: flex; gap: 6px;
+    overflow-x: auto; overflow-y: hidden;
+    border-right: none; border-bottom: 1px solid var(--border);
+    padding: 8px 12px;
+  }
+  .sidebar .cat { width: auto; white-space: nowrap; padding: 6px 12px; }
+  .sidebar .cat[aria-pressed="true"]::before { display: none; }
+}
