@@ -1,12 +1,13 @@
 ---
+import Base from "../layouts/Base.astro";
 ---
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <title>AIport</title>
-  </head>
-  <body>
-    <h1>AIport — scaffold ok</h1>
-  </body>
-</html>
+<Base>
+  <header class="app-header">
+    <span class="brand">AIport</span>
+    <span class="spacer"></span>
+  </header>
+  <div class="app-layout">
+    <aside></aside>
+    <main></main>
+  </div>
+</Base>
